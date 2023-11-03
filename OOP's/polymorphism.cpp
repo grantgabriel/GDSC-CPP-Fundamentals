@@ -1,23 +1,25 @@
 #include <iostream>
+using namespace std;
 
+// Membuat superclass bernama Hewan
 class Hewan {
 public:
-    virtual void suara() {
-        std::cout << "Hewan mengeluarkan suara." << std::endl;
+    virtual void suara() { // Keyword virtual menandakan fungsi dapat di 'override'
+        cout << "Hewan mengeluarkan suara." << endl;
     }
 };
 
 class Kucing : public Hewan {
 public:
-    void suara() override {
-        std::cout << "Meow!" << std::endl;
+    void suara() override { // Melakukan override ke method suara()
+        cout << "Meow!" << endl;
     }
 };
 
 class Anjing : public Hewan {
 public:
-    void suara() override {
-        std::cout << "Woof!" << std::endl;
+    void suara() override { // Melakukan override ke method suara()
+        cout << "Woof!" << endl;
     }
 };
 
