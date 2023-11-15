@@ -19,5 +19,6 @@ int main() {
         default:                           // Default jika kondisi semua sebelumnya tidak memenuhi
             cout << "Gender tidak jelas!";
     }
+    
     return 0;
 }

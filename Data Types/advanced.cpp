@@ -43,20 +43,20 @@ int main() {
     // // Menampilkan ukuran stack
     // cout << "Ukuran stack: " << myStack.size() << endl;      // 2
 
-    // queue<int> myQueue;
+    queue<int> myQueue;
 
-    // // Menambahkan elemen ke queue
-    // myQueue.push(1); myQueue.push(2);
-    // myQueue.push(3); myQueue.push(4);
+    // Menambahkan elemen ke queue
+    myQueue.push(1); myQueue.push(2);
+    myQueue.push(3); myQueue.push(4);
 
-    // // Menghapus elemen pertama dari queue, yakni 1 
-    // myQueue.pop();
+    // Menghapus elemen pertama dari queue, yakni 1 
+    myQueue.pop();
 
-    // // Mengakses elemen pertama dalam queue
-    // cout << "Elemen pertama: " << myQueue.front() << endl; // 2
+    // Mengakses elemen pertama dalam queue
+    cout << "Elemen pertama: " << myQueue.front() << endl; // 2
 
-    // // Menampilkan ukuran queue
-    // cout << "Ukuran queue: " << myQueue.size() << endl;    // 3
+    // Menampilkan ukuran queue
+    cout << "Ukuran queue: " << myQueue.size() << endl;    // 3
 
     return 0;
 }

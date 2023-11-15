@@ -1,14 +1,16 @@
 #include <iostream>
 using namespace std;
 
-int fibonacci(int x) {
-    if(x == 1 or x == 0)
+int fib(int x) {
+    if(x == 0 or x == 1) {
         return x;
-    else 
-        return fibonacci(x - 1) + fibonacci(x - 2);
+    } else {
+        return fib(x - 1) + fib(x - 2);
+    }
 }
 
 int main() {
-    cout << fibonacci(6);    
+    cout << fib(5);
+
     return 0;
 }
